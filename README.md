@@ -26,26 +26,26 @@ Current Goals:
 
 Maintain a local db that contains settings and data for the bot
 
-Implement server owner setup (!factbot create <Name> <Trigger> <Moderators> <MaxTimeSecondsBeforeTrigger>)
+Implement server owner setup (`!factbot create <BotName> <Moderators> <MaxTimeSecondsBeforeTrigger>`)
 
-Implement adding random facts (if owner: !factbot <Name> newFact <Fact> )
+Implement adding random facts (if owner: `!<BotName> newFact <Fact>` )
 
 Implement triggering bot (if no message since MaxTimeSecondsBeforeTrigger, send a random fact, if 0 disabled, otherwise whatever the trigger is, and only subscribers)
 
-Implement subscribing to the bot (!factbot subscribe <Name>)
+Implement subscribing to the bot (`!<BotName> subscribe`)
 
-Implement deleting the bot (if owner !factbot <Name> delete)
+Implement deleting the bot (if owner `!<BotName> delete`)
 
-Implement listing facts (if owner !factbot <Name> list) Returns all facts with id's for reference
+Implement listing facts (if owner `!<BotName> list`) Returns all facts with id's for reference
 
-Implement editing facts (if owner !factbot <Name> edit <ID> "<New String>")
+Implement editing facts (if owner `!<BotName> edit <ID> "<New String>"`)
 
-Implement deleting facts (if owner !factbot <Name> delete <ID>)
+Implement deleting facts (if owner `!<BotName> deletefact <ID>`)
 
-Implement suggesting facts (!factbot <Name> suggest "<New String>")
+Implement suggesting facts (`!<BotName> suggest "<New String>"`)
 
-Implement reviewing suggestions (if owner !factbot <Name> suggestions)
+Implement reviewing suggestions (if owner `!<BotName> suggestions`)
 
-Implement accepting suggestions (if owner !factbot <Name> approve <SuggestionID>)
+Implement accepting suggestions (if owner `!<BotName> approve <SuggestionID>`)
 
-Implement declining suggestions (if owner !factbot <Name> decline <SuggestionID>)
+Implement declining suggestions (if owner `!<BotName> decline <SuggestionID>`)
