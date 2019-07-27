@@ -1,0 +1,25 @@
+{
+    "factbot": {
+        "create": "owner",
+        "help": "any"
+    },
+    "other": {
+        "deletemoderator":"any",
+        "subscribe": "any",
+        "listsubscribers": "admin",
+        "unsubscribe": "sub",
+        "maxtime": "admin",
+        "delete": "admin",
+        "newfact": "admin",
+        "listfacts": "admin",
+        "editfact":"admin",
+        "deletefact":"admin",
+        "suggestfact":"sub",
+        "suggestions":"admin",
+        "approvefact":"admin",
+        "declinefact":"admin",
+        "addmoderator":"owner",
+        "listmoderators":"admin",
+        "help":"any"
+    }
+}

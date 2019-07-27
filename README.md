@@ -21,31 +21,39 @@ Run `npm i` to install all necessary dependencies.
 
 Run `nodemon --inspect index.js` to start the bugbot.
 
+How to use factbot
 
-Current Goals:
+Server owner initialize `!factbot create <BotName> <MaxTimeSecondsBeforeTrigger> @Role [,<@Moderators>] | <@Moderator>`
 
-Maintain a local db that contains settings and data for the bot
+Add moderators `!<BotName> addmoderator [,<NewModerator>] | <NewModerator>`
 
-Implement server owner setup (`!factbot create <BotName> <Moderators> <MaxTimeSecondsBeforeTrigger>`)
+List moderators `!<BotName> listmoderators`
 
-Implement adding random facts (if owner: `!<BotName> newFact <Fact>` )
+Delete moderators `!<BotName> deletemoderator <@Moderator>`
 
-Implement triggering bot (if no message since MaxTimeSecondsBeforeTrigger, send a random fact, if 0 disabled, otherwise whatever the trigger is, and only subscribers)
+Edit max minutes before trigger `!<BotName> maxmime <MaxTimeMinutesBeforeTrigger>` 
 
-Implement subscribing to the bot (`!<BotName> subscribe`)
+Adding random facts if owner: `!<BotName> newFact "<Fact>"`
 
-Implement deleting the bot (if owner `!<BotName> delete`)
+Triggering bot if no message since MaxTimeSecondsBeforeTrigger, send a random fact, if 0 disabled, otherwise whatever the trigger is, and only subscribers)
 
-Implement listing facts (if owner `!<BotName> list`) Returns all facts with id's for reference
+Subscribing to the bot `!<BotName> subscribe`
 
-Implement editing facts (if owner `!<BotName> edit <ID> "<New String>"`)
+List Subscibers from the bot `!<BotName> listSubscribers`
+Unsubscribe from the bot `!<BotName> unsubscribe`
 
-Implement deleting facts (if owner `!<BotName> deletefact <ID>`)
+Deleting the bot if owner `!<BotName> delete`
 
-Implement suggesting facts (`!<BotName> suggest "<New String>"`)
+Listing facts if owner `!<BotName> list` Returns all facts with id's for reference
 
-Implement reviewing suggestions (if owner `!<BotName> suggestions`)
+Editing facts if owner `!<BotName> editFact <ID> "<New String>"`
 
-Implement accepting suggestions (if owner `!<BotName> approve <SuggestionID>`)
+Deleting facts if owner `!<BotName> deleteFact <ID>`
 
-Implement declining suggestions (if owner `!<BotName> decline <SuggestionID>`)
+Suggesting facts `!<BotName> suggestFact "<New String>"`
+
+Reviewing suggestions if owner `!<BotName> suggestions`
+
+Accepting suggestions if owner `!<BotName> approveFact <SuggestionID>`
+
+Declining suggestions if owner `!<BotName> declineFact <SuggestionID>`
